@@ -11,10 +11,10 @@ import { CourseCard } from '../../components/course-card/course-card';
 })
 export class CourseList {
 
-  courses = [
-    'Angular',
-    'Java',
-    'Python'
-  ];
+courses = [
+  { id: 1, name: 'Angular', code: 'ANG101', credits: 4 },
+  { id: 2, name: 'Java', code: 'JAVA101', credits: 3 },
+  { id: 3, name: 'Python', code: 'PY101', credits: 3 }
+];
 
 }
