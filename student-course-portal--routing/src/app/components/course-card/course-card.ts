@@ -1,4 +1,4 @@
-import { Component, Input,Output,EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-course-card',
@@ -10,17 +10,19 @@ import { Component, Input,Output,EventEmitter, OnChanges, SimpleChanges } from '
 export class CourseCard implements OnChanges {
 
   @Input() course!: {
-  id: number;
-  name: string;
-  code: string;
-  credits: number;
-};
+    id: number;
+    name: string;
+    code: string;
+    credits: number;
+  };
 
-@Output()
-enrollRequested = new EventEmitter<number>();
+  @Output()
+  enrollRequested = new EventEmitter<number>();
   ngOnChanges(changes: SimpleChanges): void {
     console.log('Previous:', changes['courseName']?.previousValue);
     console.log('Current:', changes['courseName']?.currentValue);
   }
-  
+  onEnroll() {
+    this.enrollRequested.emit(this.course.id);
+  }
 }
