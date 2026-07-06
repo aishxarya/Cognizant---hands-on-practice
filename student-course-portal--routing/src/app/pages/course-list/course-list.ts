@@ -16,5 +16,10 @@ courses = [
   { id: 2, name: 'Java', code: 'JAVA101', credits: 3 },
   { id: 3, name: 'Python', code: 'PY101', credits: 3 }
 ];
-selectedCourseId?: num
+selectedCourseId?: number;
+
+onEnroll(courseId: number) {
+  console.log('Enrolling in course: ' + courseId);
+  this.selectedCourseId = courseId;
+}
 }
