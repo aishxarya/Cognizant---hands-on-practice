@@ -22,4 +22,5 @@ enrollRequested = new EventEmitter<number>();
     console.log('Previous:', changes['courseName']?.previousValue);
     console.log('Current:', changes['courseName']?.currentValue);
   }
+  
 }
