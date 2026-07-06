@@ -1,7 +1,7 @@
 <h3>{{ course.name }}</h3>
-  < p > Code: { { course.code } } </p>
-    < p > Credits: { { course.credits } } </p>
+<p>Code: {{ course.code }}</p>
+<p>Credits: {{ course.credits }}</p>
 
-      < button(click)="onEnroll()" > Enroll </button>
+<button (click)="onEnroll()">Enroll</button>
 
-        <hr>
+<hr>
