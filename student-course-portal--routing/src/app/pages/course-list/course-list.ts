@@ -23,7 +23,7 @@ ngOnInit() : void {
   console.log("ngOnInit called");
 
   setTimeout(() => {
-    console.log("")
+    console.log("Ti")
     this.isLoading = false;
   }, 1500);
 }
