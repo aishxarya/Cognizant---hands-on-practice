@@ -20,7 +20,7 @@ courses = [
 selectedCourseId?: number;
 isLoading = true;
 ngOnInit() : void {
-  setTimeout()
+  setTimeout(()
 }
 
 onEnroll(courseId: number) {
