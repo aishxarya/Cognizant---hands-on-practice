@@ -21,7 +21,7 @@ selectedCourseId?: number;
 isLoading = true;
 ngOnInit() : void {
   setTimeout(() => {
-    this
+    this.isLoading = false;
   }
 }
 
