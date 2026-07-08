@@ -13,9 +13,9 @@ export class CourseList
   implements OnInit {
 
   courses = [
-    { id: 1, name: 'Angular', code: 'ANG101', credits: 4 },
-    { id: 2, name: 'Java', code: 'JAVA101', credits: 3 },
-    { id: 3, name: 'Python', code: 'PY101', credits: 3 }
+    { id: 1, name: 'Angular', code: 'ANG101', credits: 4, gradeStatus: 'passed' },
+    { id: 2, name: 'Java', code: 'JAVA101', credits: 3, gradeStatus: 'failed' },
+    { id: 3, name: 'Python', code: 'PY101', credits: 3, gradeStatus: 'pending' }
   ];
   selectedCourseId?: number;
   isLoading = true;
