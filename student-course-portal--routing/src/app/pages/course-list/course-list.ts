@@ -10,7 +10,7 @@ import { CourseCard } from '../../components/course-card/course-card';
   styleUrl: './course-list.css'
 })
 export class CourseList 
-implements O{
+implements ONinit{
 
 courses = [
   { id: 1, name: 'Angular', code: 'ANG101', credits: 4 },
