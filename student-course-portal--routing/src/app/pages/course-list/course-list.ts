@@ -20,7 +20,7 @@ courses = [
 selectedCourseId?: number;
 isLoading = true;
 ngOnInit() : void {
-  console.log("ngOnInit called")
+  console.log("ngOnInit called");
   setTimeout(() => {
     this.isLoading = false;
   }, 1500);
