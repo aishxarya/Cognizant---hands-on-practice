@@ -1,4 +1,4 @@
-<p *ngIf="isLoading">L<h2>Course List</h2>
+<p *ngIf="isLoading">Loading<h2>Course List</h2>
 
 <app-course-card *ngFor="let c of courses" [course]="c" (enrollRequested)="onEnroll($event)">
 </app-course-card>
