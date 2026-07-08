@@ -19,7 +19,7 @@ courses = [
 ];
 selectedCourseId?: number;
 isLoading = true;
-ngOn
+ngOnInit
 
 onEnroll(courseId: number) {
   console.log('Enrolling in course: ' + courseId);
