@@ -9,7 +9,8 @@ import { CourseCard } from '../../components/course-card/course-card';
   templateUrl: './course-list.html',
   styleUrl: './course-list.css'
 })
-export class CourseList {
+export class CourseList 
+{
 
 courses = [
   { id: 1, name: 'Angular', code: 'ANG101', credits: 4 },
