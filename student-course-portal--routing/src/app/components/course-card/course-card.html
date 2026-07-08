@@ -1,26 +1,23 @@
-<div
-  [ngClass]="{
+<div [ngClass]="{
     'card-enrolled': course.gradeStatus === 'passed',
     'card-failed': course.gradeStatus === 'failed'
-  }"
-  [ngStyle]="{
+  }" [ngStyle]="{
     'border-left': course.gradeStatus === 'passed'
       ? '5px solid green'
       : course.gradeStatus === 'failed'
       ? '5px solid red'
       : '5px solid gray'
-  }"
->
+  }">
 
-  <h3>{{ course.name }}</h3>
+    <h3>{{ course.name }}</h3>
 
-  <p>Code: {{ course.code }}</p>
+    <p>Code: {{ course.code }}</p>
 
-  <p>Credits: {{ course.credits }}</p>
+    <p>Credits: {{ course.credits }}</p>
 
-  <p>Grade: {{ course.gradeStatus }}</p>
+    <p>Grade: {{ course.gradeStatus }}</p>
 
-  <button (click)="onEnroll()">Enroll</button>
+    <button (click)="onEnroll()">Enroll</button>
 
 </div>
 
