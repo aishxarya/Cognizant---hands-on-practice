@@ -22,7 +22,7 @@ isLoading = true;
 ngOnInit() : void {
   setTimeout(() => {
     this.isLoading = false;
-  },
+  }, 1500
 }
 
 onEnroll(courseId: number) {
