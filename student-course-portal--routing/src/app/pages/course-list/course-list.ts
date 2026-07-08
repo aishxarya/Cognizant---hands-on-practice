@@ -20,6 +20,7 @@ courses = [
 selectedCourseId?: number;
 isLoading = true;
 
+
 onEnroll(courseId: number) {
   console.log('Enrolling in course: ' + courseId);
   this.selectedCourseId = courseId;
