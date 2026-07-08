@@ -9,27 +9,27 @@ import { CourseCard } from '../../components/course-card/course-card';
   templateUrl: './course-list.html',
   styleUrl: './course-list.css'
 })
-export class CourseList 
-implements OnInit {
+export class CourseList
+  implements OnInit {
 
-courses = [
-  { id: 1, name: 'Angular', code: 'ANG101', credits: 4 },
-  { id: 2, name: 'Java', code: 'JAVA101', credits: 3 },
-  { id: 3, name: 'Python', code: 'PY101', credits: 3 }
-];
-selectedCourseId?: number;
-isLoading = true;
-ngOnInit() : void {
-  console.log("ngOnInit called");
+  courses = [
+    { id: 1, name: 'Angular', code: 'ANG101', credits: 4 },
+    { id: 2, name: 'Java', code: 'JAVA101', credits: 3 },
+    { id: 3, name: 'Python', code: 'PY101', credits: 3 }
+  ];
+  selectedCourseId?: number;
+  isLoading = true;
+  ngOnInit(): void {
+    console.log("ngOnInit called");
 
-  setTimeout(() => {
-    console.log("Timeout completed");
-    this.isLoading = false;
-  }, 1500);
-}
+    setTimeout(() => {
+      console.log("Timeout completed");
+      this.isLoading = false;
+    }, 1500);
+  }
 
-onEnroll(courseId: number) {
-  console.log('Enrolling in course: ' + courseId);
-  this.selectedCourseId = courseId;
-}
+  onEnroll(courseId: number) {
+    console.log('Enrolling in course: ' + courseId);
+    this.selectedCourseId = courseId;
+  }
 }
