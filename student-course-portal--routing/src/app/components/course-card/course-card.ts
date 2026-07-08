@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-course-card',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './course-card.html',
   styleUrl: './course-card.css'
 })
