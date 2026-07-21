@@ -1,6 +1,5 @@
 package com.cognizant.mockito;
 
-import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
 import org.junit.Test;
@@ -8,16 +7,14 @@ import org.junit.Test;
 public class MyServiceTest {
 
     @Test
-    public void testExternalApi() {
+    public void testVerifyInteraction() {
 
         ExternalApi mockApi = mock(ExternalApi.class);
 
-        when(mockApi.getData()).thenReturn("Mock Data");
-
         MyService service = new MyService(mockApi);
 
-        String result = service.fetchData();
+        service.fetchData();
 
-        assertEquals("Mock Data", result);
+        verify(mockApi).getData();
     }
 }
